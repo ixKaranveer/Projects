@@ -1,0 +1,115 @@
+body {
+    color: #141313;
+    /* background-color: #000; */
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.todo-wrapper {
+    padding: 2%;
+    width: 100%;
+    margin: 3% auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 7px rgba(27, 27, 27, 0.5);
+}
+
+.todo-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #b7b2b2;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.todo-input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 25px;
+}
+
+.todo-input-item label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.todo-input-item input {
+    padding: 8px;
+    border: none;
+    width: 250px;
+}
+
+.todo-input-item input:focus {
+    outline: 2px solid #00e67a;
+}
+
+.primaryBtn {
+    background-color: #00e67a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.primaryBtn:hover {
+    background-color: #04c46a;
+}
+
+
+.todo-task {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+
+.Navbar .imgtag {
+    width: 20%;
+    object-fit: cover;
+    margin-left: 38%;
+    margin-top: 35px;
+}
+
+/*
+.card {
+    flex: 0 0 calc(30% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.card-description {
+    color: #666;
+}
+
+.card-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+} */

@@ -1,0 +1,159 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+
+}
+img.image {
+  background-color: #1a1a1a;
+  height: 6rem;
+  aspect-ratio: 10 / 4;
+  object-fit: cover;
+  animation: mymove 1.5s infinite;
+}
+/* img.image:hover {
+  animation: vibrate 0.5s;
+  animation-iteration-count: infinite;
+} */
+@keyframes mymove {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 19px 27px;
+  color: white;
+  min-width: 97vw !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+}
+
+.navbar button {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar button:hover {
+  color: rgb(118, 100, 255);
+}
+
+.form-control {
+  margin-left: 15px;
+  font-size: 22px;
+  border-radius: 10px;
+}
+
+.btn-outline-success {
+
+  border-color: white;
+  color: white;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: rgba(11, 7, 7, 0.838);
+  color: rgba(255, 255, 255, 0.894);
+}
+
+body.dark-mode a {
+  color: #646cff;
+}
+
+body.dark-mode button {
+  background-color: rgba(12, 10, 10, 0.859);
+  color: white;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode a {
+  color: #646cff;
+}
+
+body.light-mode button {
+  background-color: white;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+  min-height: 41rem;
+  min-width: 108rem;
+}
+
+.card {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card img:hover{
+   animation: vibrate 0.2s;
+   animation-iteration-count: infinite;
+}
+
+.card-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.pokemon-name {
+  font-weight: bold;
+}

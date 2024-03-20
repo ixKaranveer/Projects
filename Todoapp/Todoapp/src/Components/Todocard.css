@@ -1,0 +1,56 @@
+.list-group-item {
+    /* background-color: #f8f9fa; */
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+  
+  .list-group-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Styles for Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    list-style: none;
+  }
+  
+  .page-link {
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .page-item.active .page-link {
+    /* background-color: #007bff; */
+    border-color: #007bff;
+    color: #fff;
+  }
+  
+  .page-item.disabled .page-link {
+    color: #847a93;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #ddd;
+  }
+  .card-body{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
